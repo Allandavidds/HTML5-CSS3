@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="Imagens/image_pequena.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagens/image_media.png" type="image/png">
+        <img src="Imagens/image_grande.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <audio src="midias/Ghost Of Andromeda - Blue Deer Studio.mp3" controls autoplay></audio> <!-- Tag audio funciona com MP3,WAV,OGG-->
+   <audio preload="metadata" autoplay controls loop> <!--Dentro da Tag preload há 03 possibilidades(auto,metadata e none)-->
+    <source src="midias/Ghost Of Andromeda - Blue Deer Studio.mp3" type="audio/mpeg">
+    <source src="midias/Ghost Of Andromeda - Blue Deer Studio.ogg" type="audio/ogg">
+    <source src="midias/Ghost Of Andromeda - Blue Deer Studio.wav" type="audio/wav">
+    <p>infelizmente o seu navegador não consegue reproduzir áudio.</p>
+    <a href="midias/Ghost Of Andromeda - Blue Deer Studio.mp3">Clique aqui para baixar o arquivo MP3</a>
+</body>
+</html>
