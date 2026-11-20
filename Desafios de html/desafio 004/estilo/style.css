@@ -49,8 +49,9 @@ header {
 
 header > h1 {
     color: white;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     font-size: 3em;
+    margin-bottom: 0px;
     font-family: var(--fonte-destaque);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.27);
 }
@@ -102,13 +103,14 @@ main {
 
 main h1 {
     color: var(--cor4);
+    font-size: 1.072em;
     font-family: var(--fonte-android);
 }
 
 main h2 {
     color: var(--cor4);
     font-family: var(--fonte-android);
-    font-size: 1.3em;
+    font-size: 1em;
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 8px;
 }
